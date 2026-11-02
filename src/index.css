@@ -1,0 +1,45 @@
+@import "tailwindcss";
+
+@layer base {
+  @media print {
+    body {
+      background-color: #ffffff !important;
+      color: #000000 !important;
+      -webkit-print-color-adjust: exact !important;
+      print-color-adjust: exact !important;
+    }
+
+    /* Hide UI navigation, buttons, footers */
+    header,
+    footer,
+    nav,
+    button,
+    .print\:hidden {
+      display: none !important;
+    }
+
+    #printable-paper {
+      width: 100% !important;
+      max-width: 100% !important;
+      box-shadow: none !important;
+      margin: 0 !important;
+      padding: 0 !important;
+      border: none !important;
+    }
+
+    @page {
+      margin: 15mm 15mm 15mm 15mm;
+      size: auto;
+    }
+
+    .break-inside-avoid {
+      break-inside: avoid !important;
+      page-break-inside: avoid !important;
+    }
+
+    .break-before-page {
+      break-before: page !important;
+      page-break-before: always !important;
+    }
+  }
+}

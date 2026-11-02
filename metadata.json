@@ -1,0 +1,6 @@
+{
+  "name": "MerdekaGen Soal - Pembuat Soal Otomatis Kurikulum Merdeka & Olimpiade",
+  "description": "Generator soal otomatis berstandar Kurikulum Merdeka untuk SD, SMP, SMA, dan Olimpiade dengan kustomisasi kop sekolah, ekspor PDF/Word A4/F4, kuis interaktif CBT, bank soal, dan integrasi sistem manajemen sekolah.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
